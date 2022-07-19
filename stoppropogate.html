@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   #DIV_1 {
+      background: lightpink;
+      width:130px;
+      height:130px;
+      margin-left:40%;
+      text-align:center;
+   }
+   #IMG_1 {
+      width:100px;
+      height:100px;
+      position:relative;
+      left:5px;
+   }
+</style>
+</head>
+
+<body>
+<h1>stopPropagation() method example</h1>
+
+<div id="DIV_1" onclick="OuterDiv()">
+DIV ELEMENT
+<img onclick="InnerImg(event)" id="IMG_1" 
+src="flower.jpg">
+</div>
+
+Stop propagation:
+<input type="checkbox" id="check">
+<script>
+   function InnerImg(event) {
+      confirm("Inner Image is clicked");
+      if (document.getElementById("check").checked) {
+         event.stopPropagation();
+      }
+   }
+   function OuterDiv() {
+      confirm("Outer div is clicked");
+   }
+</script>
+
+</body>
+</html>

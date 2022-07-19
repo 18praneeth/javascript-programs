@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	
+<script type="text/javascript">
+
+var top="first";
+function f1(id)
+{
+	
+	var dom1=document.getElementById(top).style;
+	var dom2=document.getElementById(id).style;
+
+	dom1.zIndex="0";
+	dom2.zIndex="30";
+	top=id;
+	
+}
+
+</script>
+
+<style type="text/css">
+
+.t1{
+	position:absolute;
+	top:0px;
+	left:0px;
+	 z-index:0;
+	
+}
+.t2
+{
+	position:absolute;
+	top:20px;
+	left:40px;
+	 z-index:0;
+	
+}
+.t3
+{
+	position:absolute;
+	top:30px;
+	left:60px;
+	 z-index:0;
+	
+}
+
+
+</style>
+</head>
+
+<body>
+
+<img class="t1" id="first" src="Fish.bmp" onclick="f1("first");"  />
+
+<img class="t2" id="second" src="Frog1.bmp" onclick="f1("second");"  />
+
+<img class="t3" id="third" src="Frog2.bmp" onclick="f1("third");"  />
+
+
+
+
+</body>
+</html>
+

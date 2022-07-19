@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<p id="myP1">This is some text-para1.</p>
+<p id="myP2">This is some text-para2.</p>
+
+<input type="button" onclick="demoDisplay()" value="Hide text with display property">
+<input type="button" onclick="demoVisibility()" value="Hide text with visibility property">
+
+<script>
+function demoDisplay() {
+  document.getElementById("myP1").style.display= "none";
+}
+
+function demoVisibility() {
+  document.getElementById("myP2").style.visibility = "hidden";
+}
+</script>
+
+</body>
+</html>

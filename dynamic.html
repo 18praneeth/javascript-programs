@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	
+<script type="text/javascript">
+var arr1=["Enter your name","Enter your Email","Enter your Detailed Address","Get Help"];
+
+function f1(i)
+{
+	
+	form1.help_text.value=arr1[i];
+}
+
+
+
+
+</script>
+</head>
+
+<body>
+<form id="form1">
+Name: <input type="text" size=20 name="name" onmouseover="f1(0);" onmouseout="f1(3);"/> <br />
+
+Email: <input type="text" size=20 name="email" onmouseover="f1(1);" onmouseout="f1(3);"/> <br />
+
+Detailed Address: <textarea name="addr" onmouseover="f1(2);" onmouseout="f1(3);"> </textarea> <br />
+
+Help: <input type="text" size=20 name="help_text"/> <br />
+
+</form>
+
+
+</body>
+</html>
+
